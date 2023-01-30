@@ -3,8 +3,7 @@ import datetime
 from dash.dependencies import Input, Output
 
 app = Dash(__name__)
-
-from dash import html
+server = app.server
 
 @app.callback(Output('my_output', 'children'),
               Input('interval_component', 'n_intervals'))
